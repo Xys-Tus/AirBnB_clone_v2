@@ -9,4 +9,5 @@ exec { 'command':
   sudo ln -sf /data/web_static/releases/test/ /data/web_static/current;
   sudo chown -hR ubuntu:ubuntu /data/;
   sudo service nginx start',
+  provider => shell,
 }
