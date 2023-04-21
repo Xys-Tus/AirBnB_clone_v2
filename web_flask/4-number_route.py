@@ -38,7 +38,7 @@ def to_python_text(text='is cool'):
 @app.route('/number/<int:n>', strict_slashes=False)
 def to_isNum(n):
     """returns HBNB"""
-    return '{} is a numbet'.format(n)
+    return '{} is a number'.format(n)
 
 
 if __name__ == '__main__':
