@@ -26,7 +26,7 @@ def to_nextpage(text):
     return 'C ' + text.replace('_', ' ')
 
 
-@app.route('/python/(<text>)', strict_slashes=False)
+@app.route('/python/<text>', strict_slashes=False)
 def to_python_text(text):
     """returns Python is cool if nothing is passed
         else return python followed by the world that was passed
