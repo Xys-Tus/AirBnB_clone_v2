@@ -31,7 +31,7 @@ def to_python_text(text):
     """returns Python is cool if nothing is passed
         else return python followed by the world that was passed
     """
-    if text == "" or text == " ":
+    if not text:
         return 'Python is cool'
     else:
         return 'Python ' + text.replace('_', ' ')
