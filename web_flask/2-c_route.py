@@ -20,7 +20,7 @@ def to_hbnb():
 
 
 @app.route('/c/<string:text>', strict_slashes=False)
-def to_hbnb(text):
+def to_nextpage(text):
     """returns HBNB"""
     return 'C ' + text.replace('_', ' ')
 
