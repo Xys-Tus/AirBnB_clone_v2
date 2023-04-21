@@ -26,15 +26,13 @@ def to_nextpage(text):
     return 'C ' + text.replace('_', ' ')
 
 
+@app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
-def to_python_text(text):
+def to_python_text(text='Python is cool'):
     """returns Python is cool if nothing is passed
         else return python followed by the world that was passed
     """
-    if not text:
-        return 'Python is cool'
-    else:
-        return 'Python ' + text.replace('_', ' ')
+    return 'Python ' + text.replace('_', ' ')
 
 
 if __name__ == '__main__':
