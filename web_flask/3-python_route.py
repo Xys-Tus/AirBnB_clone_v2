@@ -28,7 +28,7 @@ def to_nextpage(text):
 
 @app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
-def to_python_text(text='Python is cool'):
+def to_python_text(text='is cool'):
     """returns Python is cool if nothing is passed
         else return python followed by the world that was passed
     """
