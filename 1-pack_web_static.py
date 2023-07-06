@@ -14,12 +14,14 @@ def do_pack():
     """generates a tgz archive"""
     path = "./web_static"
     current_dataNtime = datetime.today().strftime("%Y%m%d%H%M%S")
-    print(type(current_dataNtime))
+
+    print(file_name)
     try:
         if isdir('./versions') is False:
             local("mkdir versions")
-        file_name = f"verions/web_static_{current_dataNtime}.tgz"
-        local(f"tar -czvf {file_name} web_static")
+        file_name = "verions/web_static_{current_dataNtime}.tgz".format(
+            current_dataNtime)
+        local("tar -czvf {} web_static".format(file_name))
         return file_name
     except:
         return None
