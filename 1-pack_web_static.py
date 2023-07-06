@@ -19,7 +19,7 @@ def do_pack():
             local("mkdir versions")
         file_name = "verions/web_static_{current_dataNtime}.tgz".format(
             current_dataNtime)
-        local("tar -czvf {} web_static".format(file_name))
+        local("tar -czvf {} /web_static".format(file_name))
         return file_name
     except:
         return None
