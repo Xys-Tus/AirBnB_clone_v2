@@ -14,8 +14,6 @@ def do_pack():
     """generates a tgz archive"""
     path = "./web_static"
     current_dataNtime = datetime.today().strftime("%Y%m%d%H%M%S")
-
-    print(file_name)
     try:
         if isdir('./versions') is False:
             local("mkdir versions")
